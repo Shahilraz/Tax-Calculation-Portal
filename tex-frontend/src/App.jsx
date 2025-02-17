@@ -16,7 +16,7 @@ export default function App() {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await axios.post('http://localhost:5000/api/calculate-tax', {
+      const response = await axios.post('https://tax-calculation-portall.onrender.com', {
         annualIncome: Number(inputs.annualIncome),
         investments: Number(inputs.investments),
         otherDeductions: Number(inputs.otherDeductions),
